@@ -1,0 +1,273 @@
+
+C:\10.2>python
+Python 3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.193464 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=[]
+>>> print(type(a))
+<class 'list'>
+>>> dir( [] )
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> l1=[1,2,3,4]
+>>> id(l1)
+2359738340800
+>>> l1[0]
+1
+>>> l1[0]=100
+>>> l1
+[100, 2, 3, 4]
+>>> id(l1)
+2359738340800
+>>> # accessing elements in a list
+>>> l1=['sholay','deewar','agneepath','hum']
+>>> print(l1[0])
+sholay
+>>> print(l1[-1])
+hum
+>>> l1[-1]
+'hum'
+>>> x=l1[-1]
+>>> x
+'hum'
+>>> type(x)
+<class 'str'>
+>>> l1[-1]
+'hum'
+>>> l1[-1].title()
+'Hum'
+>>> l1[-1].upper()
+'HUM'
+>>> print(l1[-1].upper())
+HUM
+>>> a=print(l1[-1].upper())
+HUM
+>>> a
+>>> name="amitava"
+>>> title="chatterjee"
+>>> print('my name is '+name+' '+title)
+my name is amitava chatterjee
+>>> print("prithula "+" has "+"5 yrs of exp")
+prithula  has 5 yrs of exp
+>>> exp=5
+>>> print("prithula "+" has "+exp+" yrs of exp")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> print("prithula "+" has ",exp," yrs of exp")
+prithula  has  5  yrs of exp
+>>> name="prithula"
+>>> company="cts"
+>>> print("   ")
+
+>>> print("{} works in {}".format(name,company))
+prithula works in cts
+>>> exp=5
+>>> print("{} works in {} and her exp is {} years".format(name,company,exp))
+prithula works in cts and her exp is 5 years
+>>> f"{name} works in {company}"
+'prithula works in cts'
+>>> message=f"{name} works in {company}"
+>>> print(message)
+prithula works in cts
+>>> message=F"{name} works in {company}"
+>>> print(message)
+prithula works in cts
+>>> l1=['sholay','deewar','agneepath','hum']
+>>> f" my favourite movie is {l1[3]}
+  File "<stdin>", line 1
+    f" my favourite movie is {l1[3]}
+    ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> f" my favourite movie is {l1[3]}"
+' my favourite movie is hum'
+>>> f" my favourite movie is {l1[3].title()}"
+' my favourite movie is Hum'
+>>> c=f" my favourite movie is {l1[3].title()}"
+>>> c
+' my favourite movie is Hum'
+>>> l2=[]
+>>> l2.append('colgate')
+>>> l2
+['colgate']
+>>> l2.append('closeup')
+>>> l2
+['colgate', 'closeup']
+>>> l3=['amitava','debargho']
+>>> l2.append(l3)
+>>> l2
+['colgate', 'closeup', ['amitava', 'debargho']]
+>>> l2[2].[1].title()
+  File "<stdin>", line 1
+    l2[2].[1].title()
+          ^
+SyntaxError: invalid syntax
+>>> l2[2][1].title()
+'Debargho'
+>>> #Removing an item
+>>> l1=['sholay','deewar','agneepath','hum']
+>>> l1
+['sholay', 'deewar', 'agneepath', 'hum']
+>>> l1.insert(0,'shakti')
+>>> l1
+['shakti', 'sholay', 'deewar', 'agneepath', 'hum']
+>>> l1
+['shakti', 'sholay', 'deewar', 'agneepath', 'hum']
+>>> del l1[0]
+>>> l1
+['sholay', 'deewar', 'agneepath', 'hum']
+>>> l1.insert(0,'shakti')
+>>> l1
+['shakti', 'sholay', 'deewar', 'agneepath', 'hum']
+>>> z=del l1[0]
+  File "<stdin>", line 1
+    z=del l1[0]
+      ^^^
+SyntaxError: invalid syntax
+>>> z=l1.pop()
+>>> z
+'hum'
+>>> f' the movie removed is {z.title()}'
+' the movie removed is Hum'
+>>> del l1
+>>> l1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l1' is not defined. Did you mean: 'l2'?
+>>> l
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l' is not defined. Did you mean: 'l2'?
+>>> l1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l1' is not defined. Did you mean: 'l2'?
+>>> l1=['sholay','deewar','agneepath','hum']
+>>> l1
+['sholay', 'deewar', 'agneepath', 'hum']
+>>> x=l1.remove('sholay')
+>>> x
+>>> #Organising the list
+>>>
+>>>
+>>> l1=[77,44,6,1,33,987,4,6]
+>>> l1
+[77, 44, 6, 1, 33, 987, 4, 6]
+>>> v1=l1.sort()
+>>> v1
+>>> l1.sort()
+>>> l1
+[1, 4, 6, 6, 33, 44, 77, 987]
+>>> l1=[77,44,6,1,33,987,4,6]
+>>> l1
+[77, 44, 6, 1, 33, 987, 4, 6]
+>>> m1=l1.sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'sorted'. Did you mean: 'sort'?
+>>> l1.sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'sorted'. Did you mean: 'sort'?
+>>> sorted(l1)
+[1, 4, 6, 6, 33, 44, 77, 987]
+>>> l1
+[77, 44, 6, 1, 33, 987, 4, 6]
+>>> print('sorted nos are ",sorted(l1))
+  File "<stdin>", line 1
+    print('sorted nos are ",sorted(l1))
+          ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print('sorted nos are ',sorted(l1))
+sorted nos are  [1, 4, 6, 6, 33, 44, 77, 987]
+>>> l1
+[77, 44, 6, 1, 33, 987, 4, 6]
+>>> len(l1)
+8
+>>> l1.reverse()
+>>> l1
+[6, 4, 987, 33, 1, 6, 44, 77]
+>>> l1.reverse().sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'NoneType' object has no attribute 'sort'
+>>> l1
+[77, 44, 6, 1, 33, 987, 4, 6]
+>>> #Iteration of the list
+>>> l1=['sholay','deewar','agneepath','hum']
+>>> for i in l1:
+...     print(i)
+...
+sholay
+deewar
+agneepath
+hum
+>>> for i in range(1,11):
+...     print(i)
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+>>> l2=range(1,11)
+>>> l2
+range(1, 11)
+>>> type(l2)
+<class 'range'>
+>>> l1=['sholay','deewar','agneepath','hum']
+>>> for i in l1:
+...     f"My movie collection is {i.upper()}"
+...
+'My movie collection is SHOLAY'
+'My movie collection is DEEWAR'
+'My movie collection is AGNEEPATH'
+'My movie collection is HUM'
+>>> list(range(2,11,2))
+[2, 4, 6, 8, 10]
+>>> range(2,11,2)
+range(2, 11, 2)
+>>> for i in range(2,11,2):
+...     print(i)
+...
+2
+4
+6
+8
+10
+>>> a=list(range(2,11,2))
+>>> a
+[2, 4, 6, 8, 10]
+>>> a
+[2, 4, 6, 8, 10]
+>>> min(a)
+2
+>>> max(a)
+10
+>>> sum(a)
+30
+>>> l1=['sholay','deewar','agneepath','hum']
+>>> l1[0:3]
+['sholay', 'deewar', 'agneepath']
+>>> l1[:]
+['sholay', 'deewar', 'agneepath', 'hum']
+>>> l1[:2]
+['sholay', 'deewar']
+>>> l1[2:]
+['agneepath', 'hum']
+>>> for i in li[1:4]:
+...     print(i.title())
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'li' is not defined. Did you mean: 'l2'?
+>>> for i in l1[1:4]:
+...     print(i.title())
+...
+Deewar
+Agneepath
+Hum
+>>>

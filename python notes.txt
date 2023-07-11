@@ -1,0 +1,47 @@
+python is very simple and easy to learn bcoz python uses english like statement.
+python is platform independent.
+python is a interpreted technology hence suitable for web platform.
+python is a highly extensible laguage bcoz it supports batteries(plug-ins and play other libraries).
+integer cache - python can store same id value in between (-5 to 256).
+python stores the latest variable in "_". so that we can add a 1 value to the new valiable without using the variable.but we can only use it only one time in a program. 
+
+
+how a python program runs?
+
+* shell mode or console mode - its simply process the interpretation....it does not go for compilation mode.
+
+* in python programming it is processing the compilation 1st then it interprets the 2nd.
+
+token = it is the smallest individual unit or element in the python understood by compiler. types of tokens:
+>reserved words
+>identifiers
+>literals
+>delimeters
+>operators
+
+* list is a collection of items in a particular order..like any range of numbers, family members name, shopping cart user choice, a group of ip addresses to be traced etc.
+* list is mutable data structure.
+ ex.: 1=[1,2,3,4]
+	>>> id(l1)
+	2359738340800
+	>>> l1[0]
+	1
+	>>> l1[0]=100
+	>>> l1
+	[100, 2, 3, 4]
+	>>> id(l1)
+	2359738340800
+
+*** ACCESSING ELEMENTS IN THE LIST**
+*appending - it is the adding element at the end of the list.
+* insert - it insert at a particular index.
+* pop - pop method uses LIFO algo.
+* del - to delete all the list at a time we use del
+* remove - it is used by the name of the element to delete or remove an element.
+
+***ORGANIZING THE LIST ***
+* sort is used for permanenet sorting and sorted method is used for a single time to sort a list but not sort the list permanently.
+* reverse - it is used to reversed the list permanently
+* range - it is used for a collection of numbers.
+* numerical list = range() function.
+* 

@@ -1,0 +1,503 @@
+
+E:\>md pytest
+
+E:\>md pytest
+A subdirectory or file pytest already exists.
+
+E:\>md pytoday
+
+E:\>cd pytest
+
+E:\pytest>python -version
+Unknown option: -e
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+E:\pytest>python --version
+Python 3.8.10
+
+E:\pytest>python
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSCv.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1
+1
+>>> hhhhhhhhhhhh
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hhhhhhhhhhhh' is not defined
+>>> 555555555
+555555555
+>>> n
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'n' is not defined
+>>> "n"
+'n'
+>>> 12>5
+True
+>>> 12>'5'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '>' not supported between instances of 'int' and 'str'
+>>> 12>4
+True
+>>> ^Z
+
+
+E:\pytest>dir
+ Volume in drive E is New Volume
+ Volume Serial Number is 2AED-2275
+
+ Directory of E:\pytest
+
+07-05-2023  12:01    <DIR>          .
+               0 File(s)              0 bytes
+               1 Dir(s)  142,368,858,112 bytes free
+
+E:\pytest>cd..
+
+E:\>cd pytoday
+
+E:\pytoday>dir
+ Volume in drive E is New Volume
+ Volume Serial Number is 2AED-2275
+
+ Directory of E:\pytoday
+
+07-05-2023  12:09    <DIR>          .
+07-05-2023  12:09                52 sambar.py
+               1 File(s)             52 bytes
+               1 Dir(s)  142,368,858,112 bytes free
+
+E:\pytoday>dir
+ Volume in drive E is New Volume
+ Volume Serial Number is 2AED-2275
+
+ Directory of E:\pytoday
+
+07-05-2023  12:10    <DIR>          .
+07-05-2023  12:10                52 arijit
+07-05-2023  12:09                52 sambar.py
+               2 File(s)            104 bytes
+               1 Dir(s)  142,368,858,112 bytes free
+
+E:\pytoday>python sambar.py
+I am amitava
+
+E:\pytoday>python arijit
+I am amitava
+
+E:\pytoday>python -m py_compile sambar.py
+
+E:\pytoday>cd __pycache__
+
+E:\pytoday\__pycache__>dir
+ Volume in drive E is New Volume
+ Volume Serial Number is 2AED-2275
+
+ Directory of E:\pytoday\__pycache__
+
+07-05-2023  12:13    <DIR>          .
+07-05-2023  12:13    <DIR>          ..
+07-05-2023  12:13               155 sambar.cpython-38.pyc
+               1 File(s)            155 bytes
+               2 Dir(s)  142,368,858,112 bytes free
+
+E:\pytoday\__pycache__>sambar.cpython-38.pyc
+I am amitava
+
+E:\pytoday\__pycache__>cd..
+
+E:\pytoday>code .
+
+E:\pytoday>python
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSCv.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=12
+>>>
+>>> a:int=12
+>>>
+>>>
+>>> a:float=23.44
+>>> type(a)
+<class 'float'>
+>>> s='neha'
+>>> s:str='neha
+  File "<stdin>", line 1
+    s:str='neha
+              ^
+SyntaxError: EOL while scanning string literal
+>>> s:str='neha'
+>>> type(s)
+<class 'str'>
+>>> dir(s)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> dir(1)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'a', 's']
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'a', 's']
+>>> a=12>4
+>>> a
+True
+>>> dir(a)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> b:boolean=True
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'boolean' is not defined
+>>> b:bool=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> b:bool=True
+>>> b=True
+>>> a=22222222222222222222222222222222222222222222222222222222222
+22222222222222222222222222222222222222222222222222222222222222222
+22222222222222222222222222222222222222222222222222222222222222222
+22222222222222222222222222222222222222222222222222
+>>> a='aaaaaaaa'
+>>> a="aaaaaaaa"
+>>> a='''
+... djcbjlebcjebjlebfv
+... e c klefbcklefbvb
+...  ckebkjvbefekjlbv
+... '''
+>>> a="""
+... bdelkvbbvk;lrnv
+... efnvkfrnvk;nfvr
+... enfvk;frnvknf4rv
+... """
+>>> a
+'\nbdelkvbbvk;lrnv\nefnvkfrnvk;nfvr\nenfvk;frnvknf4rv\n'
+>>> #aaaaaaaaaaaaaaaaaaaa
+>>>
+>>>
+>>>
+>>>
+>>> a='aaaaaaaaaaaaaaa"
+  File "<stdin>", line 1
+    a='aaaaaaaaaaaaaaa"
+                      ^
+SyntaxError: EOL while scanning string literal
+>>> age=input('enter age \n')
+enter age
+20
+>>> age
+'20'
+>>> age=int(age)
+>>> age
+20
+>>> age=int(input('enter age \n'))
+enter age
+22
+>>> age
+22
+>>> age++
+  File "<stdin>", line 1
+    age++
+        ^
+SyntaxError: invalid syntax
+>>> age=age+1
+>>> age+=1
+>>> age
+24
+>>> import getpass
+>>> import getpass as gp
+>>> pin=gp.getpass('enter ATM pin\n')
+enter ATM pin
+
+>>> pin
+'123456789'
+>>>
+KeyboardInterrupt
+>>> ^Z
+
+
+E:\pytoday>python app.py
+
+E:\pytoday>python app.py
+the sum is 33
+the sub is  89
+
+E:\pytoday>py
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSCv.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import app as w
+the sum is 33
+the sub is  89
+>>> import getpass as h
+>>> import app as kushagro
+>>> ^Z
+
+
+E:\pytoday>py
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSCv.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import app as k
+the sum is 33
+the sub is  89
+>>> k.addsum(11,22)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'app' has no attribute 'addsum'
+>>> k.addme(11,22)
+33
+>>> k.subme(111,22)
+89
+>>> a=122
+>>>
+>>>
+>>>
+>>> a='aaaa'
+>>> a=a+ '    nnn'
+>>> a
+'aaaa    nnn'
+>>> PI=3.27
+>>> a=100
+>>> id(a)
+140706365973360
+>>>
+>>>
+>>>
+>>>
+>>> a=a+1
+>>> a
+101
+>>> id(a)
+140706365973392
+>>> 100>88
+True
+>>> a='abc'
+>>> id(a)
+1822563020592
+>>> a=a+' pqr'
+>>> a
+'abc pqr'
+>>> id(a)
+1822565164592
+>>> a=12
+>>> b=12
+>>>
+>>> a==b
+True
+>>> id(a)
+140706365970544
+>>> id(b)
+140706365970544
+>>> a is b
+True
+>>> l1=[1,2,3]
+>>> l1
+[1, 2, 3]
+>>> id(l1)
+1822563117568
+>>> l1[0]
+1
+>>> l1[0]=99
+>>> l
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l' is not defined
+>>> l1
+[99, 2, 3]
+>>> id(l1)
+1822563117568
+>>> a=10
+>>> b=10
+>>> id(a)
+140706365970480
+>>> a=a+1
+>>> a
+11
+>>> id(a)
+140706365970512
+>>> a='aaa'
+>>> id(a)
+1822565164720
+>>> a=a+' bbbb'
+>>> a
+'aaa bbbb'
+>>> id(a)
+1822565164208
+>>> l1=[1,2,3]
+>>> type(l1)
+<class 'list'>
+>>> id(l1)
+1822565045632
+>>> l1[1]
+2
+>>> l1[1]=98
+>>> l1
+[1, 98, 3]
+>>> id(l1)
+1822565045632
+>>> a=100
+>>> a==100
+True
+>>> a=100
+>>> id(a)
+140706365973360
+>>> id(100)
+140706365973360
+>>> a is 100
+<stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+True
+>>> a='aaaaaa'
+>>> 'a' in a
+True
+>>> 'a' not in a
+False
+>>> for i in range(1,10):
+...     print(i)
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> for i in range(15):
+...     print(i)
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+>>> for i in range(1,10,2):
+...     print(i)
+...
+1
+3
+5
+7
+9
+>>> li=['a','m','i','t']
+>>> for i in li:
+...     print(i)
+...
+a
+m
+i
+t
+>>> s='abcdefghij'
+>>> s
+'abcdefghij'
+>>> s[0]
+'a'
+>>> s[123]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> s[10]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> s[9]
+'j'
+>>> s[-1]
+'j'
+>>> s[-2]
+'i'
+>>> s[-299]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> s[0,3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: string indices must be integers
+>>> s[0:3]
+'abc'
+>>> s[0:3:2]
+'ac'
+>>> s[0:]
+'abcdefghij'
+>>> s[:']
+  File "<stdin>", line 1
+    s[:']
+        ^
+SyntaxError: EOL while scanning string literal
+>>> s[:]
+'abcdefghij'
+>>> s[:9]
+'abcdefghi'
+>>> s[:7]
+'abcdefg'
+>>> a='kushagro'
+>>> a*7
+'kushagrokushagrokushagrokushagrokushagrokushagrokushagro'
+>>> help()
+
+Welcome to Python 3.8's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at https://docs.python.org/3.8/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module alsocomes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> keywords
+
+Here is a list of the Python keywords.  Enter any keyword to getmore help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not
+
+help>
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly fromthe
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> help()
+
+Welcome to Python 3.8's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at https://docs.python.org/3.8/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module alsocomes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help>
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly fromthe
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> dir('')
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>>
